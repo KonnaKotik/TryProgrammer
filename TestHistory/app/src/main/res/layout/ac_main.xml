@@ -17,25 +17,25 @@
         tools:layout_editor_absoluteX="8dp">
 
         <Button
-            android:id="@+id/ageOneButton"
+            android:id="@+id/Button1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Современность" />
 
         <Button
-            android:id="@+id/ageTwoButton"
+            android:id="@+id/Button2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Древний мир" />
 
         <Button
-            android:id="@+id/ageThreeButton"
+            android:id="@+id/Button3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Просто так" />
 
         <Button
-            android:id="@+id/ageFourButton"
+            android:id="@+id/Button4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="И так сойдет" />

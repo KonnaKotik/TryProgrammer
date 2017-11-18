@@ -14,10 +14,10 @@ import com.konna.testhistory.objects.User;
 
 public class MainActivity extends AppCompatActivity {
     TextView textView;
-    Button ageOneButton;
-    Button ageTwoButton;
-    Button ageThreeButton;
-    Button ageFourButton;
+    Button Button1;
+    Button Button2;
+    Button Button3;
+    Button Button4;
     User user;
 
     @Override
@@ -33,39 +33,36 @@ public class MainActivity extends AppCompatActivity {
 
 
         textView = (TextView) findViewById(R.id.textView2);
-        ageOneButton = findViewById(R.id.ageOneButton);
-        ageTwoButton = findViewById(R.id.ageTwoButton);
-        ageThreeButton = findViewById(R.id.ageThreeButton);
-        ageFourButton = findViewById(R.id.ageFourButton);
+        Button1 = findViewById(R.id.Button1);
+        Button2 = findViewById(R.id.Button2);
+        Button3 = findViewById(R.id.Button3);
+        Button4 = findViewById(R.id.Button4);
 
         View.OnClickListener OnClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intenT1 = new Intent(MainActivity.this, TestActivity1.class);
-                Intent intenT2 = new Intent(MainActivity.this, TestActivity2.class);
-                Intent intenT3 = new Intent(MainActivity.this, TestActivity3.class);
-                Intent intenT4 = new Intent(MainActivity.this, TestActivity4.class);
+                Intent intenT = new Intent(MainActivity.this, TestActivity1.class);
                 switch (view.getId()) {
-                    case R.id.ageOneButton:
-                        startActivity(intenT1);
+                    case R.id.Button1:
+                        startActivity(intenT);
                         break;
-                    case R.id.ageTwoButton:
-                        startActivity(intenT2);
+                    case R.id.Button2:
+                        startActivity(intenT);
                         break;
-                    case R.id.ageThreeButton:
-                        startActivity(intenT3);
+                    case R.id.Button3:
+                        startActivity(intenT);
                         break;
-                    case R.id.ageFourButton:
-                        startActivity(intenT4);
+                    case R.id.Button4:
+                        startActivity(intenT);
                         break;
 
                 }
             }
         };
-        ageOneButton.setOnClickListener(OnClickListener);
-        ageTwoButton.setOnClickListener(OnClickListener);
-        ageThreeButton.setOnClickListener(OnClickListener);
-        ageFourButton.setOnClickListener(OnClickListener);
+        Button1.setOnClickListener(OnClickListener);
+        Button2.setOnClickListener(OnClickListener);
+        Button3.setOnClickListener(OnClickListener);
+        Button4.setOnClickListener(OnClickListener);
     }
 }
 
