@@ -17,6 +17,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+    <activity
+        android:name=".activities.TestActivity1"
+        android:label="Древний мир">
+        </activity>
+        <activity
+            android:name=".activities.TestActivity2"
+            android:label="Средние века">
+        </activity>
+        <activity
+            android:name=".activities.TestActivity3"
+            android:label="Ну хз какй тут век">
+        </activity>
+        <activity
+            android:name=".activities.TestActivity4"
+            android:label="Современность">
+        </activity>
     </application>
 
 </manifest>

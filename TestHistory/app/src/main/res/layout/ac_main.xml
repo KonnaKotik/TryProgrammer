@@ -23,13 +23,13 @@
             android:text="Современность" />
 
         <Button
-            android:id="@+id/ageThreeButton"
+            android:id="@+id/ageTwoButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Древний мир" />
 
         <Button
-            android:id="@+id/ageTwoButton"
+            android:id="@+id/ageThreeButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Просто так" />
