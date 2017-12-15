@@ -1,24 +1,23 @@
 package com.konna.testhistory.activities;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TabHost;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.konna.testhistory.R;
 import com.konna.testhistory.objects.User;
 
 public class MainActivity extends AppCompatActivity {
-    TextView textView;
-    Button Button1;
-    Button Button2;
-    Button Button3;
-    Button Button4;
+
     User user;
+
+    Button ageOneButton;
+    Button ageTwoButton;
+    Button ageThreeButton;
+    Button ageFourButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,37 +31,55 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, user.getUsername(), Toast.LENGTH_SHORT).show();
 
 
-        textView = (TextView) findViewById(R.id.textView2);
-        Button1 = findViewById(R.id.Button1);
-        Button2 = findViewById(R.id.Button2);
-        Button3 = findViewById(R.id.Button3);
-        Button4 = findViewById(R.id.Button4);
+        ageOneButton = (Button) findViewById(R.id.ageOneButton);
+        ageTwoButton = (Button) findViewById(R.id.ageTwoButton);
+        ageThreeButton = (Button) findViewById(R.id.ageThreeButton);
+        ageFourButton = (Button) findViewById(R.id.ageFourButton);
 
-        View.OnClickListener OnClickListener = new View.OnClickListener() {
+
+        ageOneButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, TestActivity.class);
+                intent.putExtra("age", "age1");
+                startActivity(intent);
+            }
+        });
+
+        ageTwoButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, TestActivity.class);
+                intent.putExtra("age", "age2");
+                startActivity(intent);
+            }
+        });
+
+        ageThreeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, TestActivity.class);
+                intent.putExtra("age", "age3");
+                startActivity(intent);
+            }
+        });
+
+        ageFourButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, TestActivity.class);
+                intent.putExtra("age", "age4");
+                startActivity(intent);
+            }
+        });
+
+       /* goButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intenT = new Intent(MainActivity.this, TestActivity1.class);
-                switch (view.getId()) {
-                    case R.id.Button1:
-                        startActivity(intenT);
-                        break;
-                    case R.id.Button2:
-                        startActivity(intenT);
-                        break;
-                    case R.id.Button3:
-                        startActivity(intenT);
-                        break;
-                    case R.id.Button4:
-                        startActivity(intenT);
-                        break;
-
-                }
+                Intent intent = new Intent(MainActivity.this, TestActivity.class);
+                startActivity(intent);
             }
-        };
-        Button1.setOnClickListener(OnClickListener);
-        Button2.setOnClickListener(OnClickListener);
-        Button3.setOnClickListener(OnClickListener);
-        Button4.setOnClickListener(OnClickListener);
+        });*/
     }
 }
 

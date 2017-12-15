@@ -17,28 +17,28 @@
         tools:layout_editor_absoluteX="8dp">
 
         <Button
-            android:id="@+id/Button1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Современность" />
-
-        <Button
-            android:id="@+id/Button2"
+            android:id="@+id/ageOneButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Древний мир" />
 
         <Button
-            android:id="@+id/Button3"
+            android:id="@+id/ageThreeButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Просто так" />
+            android:text="Средние века" />
 
         <Button
-            android:id="@+id/Button4"
+            android:id="@+id/ageTwoButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="И так сойдет" />
+            android:text="Современность" />
+
+        <Button
+            android:id="@+id/ageFourButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Новый мир" />
 
     </LinearLayout>
 
@@ -46,7 +46,7 @@
         android:id="@+id/textView2"
         android:layout_width="368dp"
         android:layout_height="40dp"
-        android:text="      И так сойдет"
+        android:text="      Выберите тему"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
