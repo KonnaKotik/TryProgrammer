@@ -15,6 +15,9 @@ public class MainActivity extends AppCompatActivity {
     User user;
 
     Button ageOneButton;
+    Button ageTwoButton;
+    Button ageThreeButton;
+    Button ageFourButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,12 +32,43 @@ public class MainActivity extends AppCompatActivity {
 
 
         ageOneButton = (Button) findViewById(R.id.ageOneButton);
+        ageTwoButton = (Button) findViewById(R.id.ageTwoButton);
+        ageThreeButton = (Button) findViewById(R.id.ageThreeButton);
+        ageFourButton = (Button) findViewById(R.id.ageFourButton);
+
 
         ageOneButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, TestActivity.class);
                 intent.putExtra("age", "age1");
+                startActivity(intent);
+            }
+        });
+
+        ageTwoButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, TestActivity.class);
+                intent.putExtra("age", "age2");
+                startActivity(intent);
+            }
+        });
+
+        ageThreeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, TestActivity.class);
+                intent.putExtra("age", "age3");
+                startActivity(intent);
+            }
+        });
+
+        ageFourButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, TestActivity.class);
+                intent.putExtra("age", "age4");
                 startActivity(intent);
             }
         });

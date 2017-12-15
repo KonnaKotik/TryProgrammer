@@ -14,10 +14,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-/**
- * Created by emil1101 on 12.12.17.
- * TestHistory
- */
+
 
 public class Questions {
 
